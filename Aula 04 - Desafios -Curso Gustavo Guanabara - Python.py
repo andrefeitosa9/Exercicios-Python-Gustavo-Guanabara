@@ -17,4 +17,4 @@ print ('Você nasceu em',dia_nascimento,'/', mes_nascimento,'/', ano_nascimento,
 print ('Desafio 3 - Some de dois números \n')
 numero_um = input('Digite o primeiro número\n')
 numero_dois = input('Digite o segundo número\n')
-print ('A soma dos números é igual a',int(numero_um)+int(numero_dois),'\n')
+print ('A soma dos números é igual a',float(numero_um)+float(numero_dois),'\n')
