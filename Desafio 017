@@ -1,0 +1,8 @@
+# Desafio 017 - Faça um programa que elia o comprimento do cateto oposto e do cateto adjacente de um triângulo retângulo, calcule e mostre o comprimento da hipotenusa
+
+cateto_oposto = float(input('Qual o comprimetno do cateto oposto? '))
+cateto_adjacente = float(input('Qual o comprimento do cateto adjacente? '))
+hipotenusa = math.sqrt((math.pow(cateto_oposto,2)) + (math.pow(cateto_adjacente,2)))
+
+print (f' O valor da hipotenusa em um triângula retângulo de catetos {cateto_adjacente} e {cateto_oposto} é de {hipotenusa:.4f} \n')
+
