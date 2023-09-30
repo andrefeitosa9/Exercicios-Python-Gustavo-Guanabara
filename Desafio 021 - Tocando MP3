@@ -1,0 +1,25 @@
+# Desafio 021 - Faça um programa em Python que abra e reproduza o áudio de um arquivo MP3.
+import pygame
+from time import sleep
+pygame.init()
+pygame.mixer.music.load('hino_fortaleza.mp3')
+pygame.mixer.music.play()
+input ()
+pygame.mixer.music.stop()
+
+
+# Para referências futuras: Caso eu queira que toque por alguns segundos, utilizar a estrutura:
+
+# import pygame
+# from time import sleep
+# pygame.init()
+# pygame.mixer.music.load('hino_fortaleza.mp3')
+# pygame.mixer.music.play()
+# sleep(5)
+# pygame.mixer.music.stop()
+
+# Para referências futuras - Jeito mais fácil:
+
+# from playsound import playsound
+
+# playsound('D:\Documentos\Cursos\Exercicios\hino_fortaleza.mp3',True)
