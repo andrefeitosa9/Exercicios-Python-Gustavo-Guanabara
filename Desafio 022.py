@@ -14,6 +14,9 @@ print (f'Esse nome todo em minúsculo fica: {nome_completo_minusculo} \n')
 
 numero_caracteres = int(len(nome_completo) - int(nome_completo.count(" ")))
 
-print (f' A quantidade de caracteres nesse nome é de : {numero_caracteres}')
+print (f' A quantidade de caracteres nesse nome é de : {numero_caracteres}'\n)
+
+nome_completo_separado = nome_completo.split()
+print (f' O primeiro nome é: {nome_completo_separado[0]}')
 
 
