@@ -1,0 +1,17 @@
+# Exercício Python 27: Faça um programa que leia o nome completo
+# de uma pessoa, mostrando em seguida o primeiro e o último nome separadamente.
+
+nome_completo = input(('Escreva o seu nome completo: ')).strip()
+
+primeiro_nome = nome_completo[0:nome_completo.find(" ")]
+ultimo_nome = nome_completo[nome_completo.rfind(" "):]
+
+print (f'O seu primeiro nome é: {primeiro_nome} \n')
+print (f'O seu último nome é: {ultimo_nome} \n')
+
+################################################# Outra forma de fazer:
+
+nome_completo2 = input(('Escreva o seu nome completo: ')).strip()
+
+nomes_separados = nome_completo2.split()
+print(f'Olá, tudo bem? Muito prazer! \nVi aqui que seu primeiro nome é {nomes_separados[0]} e seu último nome é {nomes_separados[len(nomes_separados)-1]} \n')
