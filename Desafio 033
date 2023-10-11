@@ -18,4 +18,15 @@ if n2 > n1 and n2 > n3:
 if n3 > n1 and n2 > n3:
     maior = n3
 
-print (f'O menor número da lista é {menor} \n O maior número da lista é {maior}')
+print (f'O menor número da lista é {menor} \n O maior número da lista é {maior}'),
+
+### Outra forma de fazer, sem usar IF, de maneira mais simples
+
+# n1 = int(input('Escreva um número: '))
+# n2 = int(input('Escreva um número: '))
+# n3 = int(input('Escreva um número: '))
+# l = [n1, n2, n3]
+# print (min(n1,n2,n3))
+# ou print (min(l))
+# print (max(n1,n2,n3))
+# ou print (max(l))
