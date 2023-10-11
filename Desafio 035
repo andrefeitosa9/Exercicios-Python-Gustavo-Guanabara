@@ -1,0 +1,24 @@
+# Exercício Python 35: Desenvolva um programa que leia o comprimento de três retas e diga ao usuário se elas podem
+# ou não formar um triângulo.
+
+# 1ª forma de fazer
+print ('É possível construir um triângulo? Vamos descobrir. \n ')
+n1 = float(input('Digite o comprimento do primeiro segmento: '))
+n2 = float(input('Digite o comprimento do segundo segmento: '))
+n3 = float(input('Digite o comprimento do terceiro segmento: '))
+if  (n1 + n2) > n3 and (n2 + n3) > n1 and (n1 + n3) > n2:
+    print (f' Os segmentos de comprimentos {n1}, {n2} e {n3} PODEM formar um triângulo')
+else:
+    print (f'Os segmentos de comprimentos {n1}, {n2} e {n3} NÃO PODEM formar um triângulo')
+
+
+# 2ª forma de fazer:
+# print ('É possível construir um triângulo? Vamos descobrir. \n ')
+# n1 = float(input('Digite o comprimento do primeiro segmento: '))
+# n2 = float(input('Digite o comprimento do segundo segmento: '))
+# n3 = float(input('Digite o comprimento do terceiro segmento: '))
+# maior = max(n1,n2,n3)
+# if maior < ((n1 + n2 + n3) - maior):
+ #   print (f' Os segmentos de comprimentos {n1}, {n2} e {n3} PODEM formar um triângulo')
+# else:
+ #   print (f'Os segmentos de comprimentos {n1}, {n2} e {n3} NÃO PODEM formar um triângulo')
