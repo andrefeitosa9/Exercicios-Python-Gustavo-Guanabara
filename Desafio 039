@@ -13,4 +13,4 @@ if idade == 18:
 elif idade < 18:
     print (f' Ainda não é o momento para se apresentar ao alistamento obrigatório. Você só deverá se alistar no ano de {ano_nascimento + 18}')
 else:
-    print (f' Você está atrasado {idade - 18} ano(s) para o alistamento militar obrigatório ')
+    print (f' Você está atrasado {idade - 18} ano(s) para o alistamento militar obrigatório. Você deveria ter se alistado no ano de {ano_nascimento + 18} ')
