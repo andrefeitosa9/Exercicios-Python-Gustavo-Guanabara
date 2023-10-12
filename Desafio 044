@@ -1,0 +1,25 @@
+# Exercício Python 44: Elabore um programa que calcule o valor a ser pago por um produto,
+# considerando o seu preço normal e condição de pagamento:
+# – à vista dinheiro/cheque: 10% de desconto
+# – à vista no cartão: 5% de desconto
+# – em até 2x no cartão: preço formal
+# – 3x ou mais no cartão: 20% de juros
+
+print ('Bem vindo! Esse é o caixa da nossa loja!')
+preco = float(input('Qual o preço do produto? R$  '))
+print ("""Nós oferecemos 4 formas de pagamento:
+        [1] A vista (Dinheiro ou Cheque) - 10% de desconto
+        [2] A vista no cartão - 5% de desconto
+        [3] Em 2x no Cartão  - Preço de etiqueta
+        [4] 3x ou mais no cartão - 20% de juros """)
+forma_pagamento = int(input('Digite o número da forma de pagamento: '))
+print (f' O preço do produto escolhido foi R$ {preco:.2f} e a forma de pagamento {forma_pagamento}. O preço final a ser pago é de R$ ', end='' )
+if forma_pagamento == 1:
+    print (f'{preco*0.9:.2f}')
+elif forma_pagamento == 2:
+    print (f'{preco*0.95:.2f}')
+elif forma_pagamento == 3:
+    print (f'{preco:.2f}')
+elif forma_pagamento == 4:
+    print (f'{preco*1.2:.2f}')
+    
