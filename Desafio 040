@@ -1,0 +1,18 @@
+# Exercício Python 040: Crie um programa que leia duas notas de um aluno e calcule sua média,
+# mostrando uma mensagem no final, de acordo com a média atingida:
+from time import sleep
+
+print ('Chegou a hora da verdade. Calcule sua média')
+n1 = float(input('Qual foi a sua primeira nota? '))
+n2 = float(input('Qual foi a segunda nota? '))
+media = (n1 + n2) / 2
+print ('Cruze os dedos. Calculando...')
+sleep (1)
+print (f'Sua média foi {media:.2f}')
+if media < 5:
+    print ('\033[031m Você foi reprovado! \033[m')
+elif media >= 7:
+    print ('\033[032m Você foi aprovado. Parabéns!\033[m')
+else:
+    print ('Você terá uma segunda chance na \033[034mRECUPERAÇÃO\033[m. Aproveite!')
+    
