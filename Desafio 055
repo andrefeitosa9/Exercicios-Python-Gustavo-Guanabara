@@ -1,0 +1,6 @@
+# Exercício Python 55: Faça um programa que leia o peso de cinco pessoas. No final, mostre qual foi o maior e o menor peso lidos.
+lista_pesos = []
+for pessoa in range (1,6):
+    peso = float(input(f'Digite o peso da {pessoa}ª pessoa: '))
+    lista_pesos.append(peso)
+print (f'O maior peso digitado foi {max(lista_pesos):.2f}kg e o menor foi {min(lista_pesos):.2f}kg')
