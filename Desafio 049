@@ -1,0 +1,9 @@
+# Exercício Python 49: Refaça o DESAFIO 9, mostrando a tabuada de um número que o usuário escolher,
+# só que agora utilizando um laço for.
+from time import sleep
+print ('Bem vindo a tabuada Python!')
+n = int(input('Digite o número que você deseja a tabuada: '))
+print ('Calculando...')
+sleep(2)
+for tabuada in range (1,11):
+    print (f'{n} x {tabuada:2} = {n * tabuada}')
