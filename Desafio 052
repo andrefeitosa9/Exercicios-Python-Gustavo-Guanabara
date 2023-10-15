@@ -1,0 +1,14 @@
+# Exercício Python 52: Faça um programa que leia um número inteiro e diga se ele é ou não um número primo.
+from time import sleep
+print ('Calculadora de número primo')
+num = int(input('Digite o número para avaliação: '))
+contador = 0
+for divisor in range (1,num+1):
+    if num % divisor == 0:
+        contador += 1
+print ('Calculando...')
+sleep(1)
+if contador == 2:
+    print (f'O número {num} é um número primo.')
+else:
+    print (f'O número {num} não é um número primo.')
