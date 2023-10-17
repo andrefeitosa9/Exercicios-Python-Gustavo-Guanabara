@@ -1,0 +1,9 @@
+# Exercício Python 060: Faça um programa que leia um número qualquer e mostre o seu fatorial.
+
+num = int(input('Digite um número para calcular o seu fatorial: '))
+multiplicador = num
+fatorial = 1
+while multiplicador > 0:
+    fatorial *= multiplicador
+    multiplicador -= 1
+print (f'O fatorial de {num} é igual a {fatorial}')
