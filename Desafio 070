@@ -8,8 +8,7 @@ from time import sleep
 totalgasto = contadormaiorque1000 = contadorprodutos = 0
 produto_barato = ' '
 preco_produto_barato = 0
-continuar = "S"
-while continuar == 'S':
+while True:
         nome_produto = input('Qual o nome do produto? ')
         preco_produto = float(input('Qual o preço desse produto? R$ '))
         contadorprodutos += 1
@@ -29,6 +28,8 @@ while continuar == 'S':
         continuar = input('Deseja continuar? [S/N] ').upper().strip()[0]
         while continuar not in 'SsNn':
             continuar = input('Deseja continuar? [S/N] ').upper().strip()[0]
+        if continuar == "N":
+            break
 print ('Processando todos os produtos...')
 sleep (1)
 print (f"""
