@@ -1,7 +1,0 @@
-# Desafio 016 Crie um programa que leia um número real qualquer pelo teclado e mostre na tela a sua porção inteira.
-
-import math
-import random
-
-num = float(input('Digite um número qualquer: '))
-print (f'O número {num} tem como parte inteira o número {math.floor(num)} \n')

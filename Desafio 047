@@ -1,9 +1,0 @@
-# Exercício Python 47: Crie um programa que mostre na tela todos os números pares que estão no intervalo entre 1 e 50.
-
-print ('Calculadora de números pares em um intervalo!\n')
-
-for n in range (1,51):
-    if n % 2 == 0:
-        print (n)
-
-print ('Esses são os números pares no intervalo solicitado')
