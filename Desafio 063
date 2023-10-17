@@ -1,0 +1,18 @@
+# Exercício Python 63: Escreva um programa que leia um número N inteiro qualquer
+# e mostre na tela os N primeiros elementos de uma Sequência de Fibonacci.
+
+# A sucessão de Fibonacci é uma sequência de números inteiros iniciados por zero e um, no qual cada termo subsequente corresponde
+# a soma dos dois números anteriores:
+# 0,1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584...
+elementos = int(input('Quantos elementos você quer ver da Sequência de Fibonacci?  '))
+t1 = 0
+t2 = 1
+print (f'{t1} -> {t2} -> ',end='')
+cont = 3
+while cont <= elementos:
+    t3 = t1 + t2
+    print (f'{t3} -> ',end='')
+    t1 = t2
+    t2 = t3
+    cont += 1
+print (' FIM ')
