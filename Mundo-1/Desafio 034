@@ -1,0 +1,13 @@
+# Exercício Python 34: Escreva um programa que pergunte o salário de um funcionário e calcule o valor do seu aumento.
+# Para salários superiores a R$1250,00, calcule um aumento de 10%. Para os inferiores ou iguais, o aumento é de 15%.
+
+from time import sleep
+print ('Parabéns! Você irá receber um aumento! Use essa calculadora para saber o seu novo salário. \n')
+salario_antigo = float(input('Qual era o seu salário antigo? R$ '))
+if salario_antigo > 1250:
+    salario_novo = salario_antigo*1.10
+else:
+    salario_novo = salario_antigo*1.15
+print ('Calculando seu novo salário... \n')
+sleep (1.5)
+print (f'O seu novo salário será R$ {salario_novo:.2f}. Parabéns!')

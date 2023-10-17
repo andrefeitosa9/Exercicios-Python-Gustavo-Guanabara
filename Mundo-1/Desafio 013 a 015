@@ -1,0 +1,28 @@
+# Desafio 013 - Faça um algoritmo que leia o salário de um funcionário e mostre seu novo salário com 15% de aumento
+
+salario_anterior = float(input('Qual o salário atual do funcionário? R$ '))
+print(f'O salário anterior do funcionário é de R$ {salario_anterior:.2f}\n')
+
+salario_novo = salario_anterior *1.15
+
+print(f'Após o aumento de 15% o salário do funcionário será R$ {salario_novo:.2f} ')
+
+# Desafio 014 - Escreva um programa que converta uma temperatura digitando em graus Celsius e converta para graus Fahrenheit.
+
+temperatura_celsius = float(input('Escreva a temperatura em Celsius: '))
+temperatura_fahrenheit = (temperatura_celsius * 1.8) + 32
+
+print(f'A temperatura de {temperatura_celsius}ºC equivale a {temperatura_fahrenheit}ºF \n')
+
+# Desafio 015: Escreva um programa que pergunte a quantidade de Km percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado. Calcule o preço a pagar, sabendo que o carro custa R$60 por dia e R$0,15 por Km rodado.
+
+print('Para calcular o valor final da sua locação, nos informe o que for pedido abaixo: \n')
+
+diarias_aluguel = int(input('Digite o total de diárias desse aluguel:'))
+km_percorridos = float(input('Quantos km foram percorridos durante a locação?'))
+preco_diaria = 60
+preco_km_percorrido = 0.15
+
+print(f'O valor total da locação foi de R$ {(preco_diaria*diarias_aluguel)+(preco_km_percorrido*km_percorridos):.2f} \n')
+print(f'Descrição de valores: \n Custo total por {diarias_aluguel} diária(s): R$ {preco_diaria * diarias_aluguel} \n Custo total por {km_percorridos} Km percorrido(s): R$ {preco_km_percorrido*km_percorridos}')
+

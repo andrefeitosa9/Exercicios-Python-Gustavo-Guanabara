@@ -1,0 +1,8 @@
+# Exercício Python 26: Faça um programa que leia uma frase pelo teclado e mostre quantas vezes aparece a
+# letra “A”, em que posição ela aparece a primeira vez e em que posição ela aparece a última vez.
+
+frase = input('Escreva uma frase: ').strip().upper()
+
+print (f'A letra "A" aparece {frase.count("A")} vez(es) \n')
+print (f'A primeira posição que a letra "A" aparece é a posição {frase.find("A")} \n')
+print (f'A última posição que a letra "A" aparece é a posição {frase.rfind("A")}')
