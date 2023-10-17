@@ -19,5 +19,4 @@ while mais != 0:
         termo += razao
     print ('PAUSA')
     mais = int(input('Quantos termos você deseja mostrar a mais? '))
-print ('Fim do programa')
-
+print (f'Fim do programa. Foram mostrados {total} termos ')
