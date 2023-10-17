@@ -12,6 +12,6 @@ while continuar == 'S':
     contador += 1
     total = soma + num
     soma = total
-    continuar = input('Deseja continuar? [S/N] ').strip().upper()
+    continuar = input('Deseja continuar? [S/N] ').strip().upper()[0]
 media = total / contador
 print (f'A quantidade de números digitados foi {contador}, a soma deles foi {total} e a média deles foi {media}.\n O maior número foi {max(lista_num)} e o menor número foi {min(lista_num)}.')
