@@ -4,6 +4,12 @@
 from time import sleep
 
 def fatorial(num=1, show=False):
+    """
+-> Calcula o fatorial de um número (num)
+    :param num: Número que será fatorizado
+    :param show: Mostrar os números em ordem decrescente até o número 1. Opcional.
+    :return: Não há função return
+    """
     fat = 1
     if show == False:
         for num in range (num, 0, -1):
