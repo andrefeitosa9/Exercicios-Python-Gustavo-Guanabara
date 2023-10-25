@@ -54,3 +54,6 @@ while True:
             moeda.opcoes()
             opcao = input('Digite a opção desejada:  ')
 
+# parei na função formatar em moeda em cada opção
+# dar um jeito da função aumentar e subtrair rodar em número e não em lista
+

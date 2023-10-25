@@ -19,31 +19,28 @@ def opcoes():
     """)
 
 def aumentar(*num, formatar=False):
-    print ('Função escolhida: SOMA.')
+    print ('Função escolhida: SOMA')
     soma = 0
     repetir = ' '
     numeros = []
+    numeros_formatados = []
     formatacao = input('Deseja formatar o número em reais? [S / N]  ').upper().strip()[0]
     while True:
-        num = input('Digite um número para somar: ')
-        if num.isnumeric():
-            numeros.append(float(num))
-            soma += float(num)
-            repetir = input("Deseja continuar? [ S / N]  ").strip().upper()[0]
+        num = float(input('Digite um número para somar:  '))
+        soma += (num)
+        numeros.append(num)
+        repetir = input('Deseja continuar? [S / N]  ').strip().upper()[0]
+        if repetir == 'N':
+            break
+        if  repetir not in 'SN':
+            repetir = input('Opção inválida. Deseja continuar? [S / N]  ').strip().upper()
             if repetir == 'N':
                 break
-            if repetir not in 'SN':
-                repetir = input('Opção inválida. Deseja continuar? [S / N]  ').strip().upper()[0]
-                if repetir == 'N':
-                    break
-        else:
-            print (f'Caractere inválido.')
-        if formatacao == 'S':
-            formatar == True
-            if formatar == True:
-                soma = moeda(soma)
+    if formatacao == 'S':
+        print (f'Os números informados foram {numeros} e a soma deles é {moedaconversao(soma)}')
+    else:
+        print (f'Os números informados foram {numeros} e a soma deles é {soma}')
 
-    print (f'Os números informados foram {numeros} e a soma deles é {soma}')
 
 
 def diminuir (*num):
@@ -103,3 +100,7 @@ def moeda(num=0):
             print ('.',end='')
         else:
             print (f'{d}',end='')
+
+def moedaconversao(num=0):
+    num = (f'R$ {num:.2f}'.replace('.',','))
+    return num
